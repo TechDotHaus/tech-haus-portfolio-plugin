@@ -40,9 +40,36 @@ function register_custom_taxonomy () {
 		'label'        => __( 'Project Type', 'thportfolio' ),
 		'labels'       => $labels,
 		'hierarchical' => true,
-
 	);
 
 	register_taxonomy( 'project_type', 'projects', $args );
+
+	$labels = array(
+		'name'                       => _x( 'Skills', 'taxonomy general name', 'thportfolio' ),
+		'singular_name'              => _x( 'Skill', 'taxonomy singular name', 'thportfolio' ),
+		'search_items'               => __( 'Search Skills', 'thportfolio' ),
+		'popular_items'              => __( 'Popular Skills', 'thportfolio' ),
+		'all_items'                  => __( 'All Skills', 'thportfolio' ),
+		'parent_item'                => __( 'Parent Skill', 'thportfolio' ),
+		'parent_item_colon'          => __( 'Parent Skill:', 'thportfolio' ),
+		'edit_item'                  => __( 'Edit Skill', 'thportfolio' ),
+		'view_item'                  => __( 'View Skill', 'thportfolio' ),
+		'update_item'                => __( 'Update Skill', 'thportfolio' ),
+		'add_new_item'               => __( 'Add New Skill', 'thportfolio' ),
+		'new_item_name'              => __( 'New Skill Name', 'thportfolio' ),
+		'separate_items_with_commas' => __( 'Separate Skills with commas', 'thportfolio' ),
+		'add_or_remove_items'        => __( 'Add or remove Skills', 'thportfolio' ),
+		'choose_from_most_used'      => __( 'Choose from the most used Skills', 'thportfolio' ),
+		'not_found'                  => __( 'No Skills found.', 'thportfolio' ),
+		'menu_name'                  => __( 'Skills', 'thportfolio' ),
+	);
+
+	$args = array(
+		'label'        => __( 'Skills', 'thportfolio' ),
+		'labels'       => $labels,
+		'hierarchical' => false,
+	);
+
+	register_taxonomy( 'skills', 'projects', $args );
 }
 

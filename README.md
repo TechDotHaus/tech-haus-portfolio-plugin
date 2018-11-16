@@ -2,7 +2,7 @@
 
 This repository is for a basic Portfolio Project Custom Post Type for WordPress. The basis of this plugin is from [Know the Code](https://KnowTheCode.io). 
 
-For now creates a post type called 'project' and a taxonomy for it called 'project_type'.
+For now creates a post type called 'project', and a two custom taxonomies - 'project_type' and 'skills'.
 
 ## Installation
 
